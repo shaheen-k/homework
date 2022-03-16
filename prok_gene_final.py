@@ -75,7 +75,9 @@ for orf in orfs(dna):
 	if len(orf) > arg.size: count += 1
 	block[(len(orf))//arg.hist] += 1
 print("'possible' genes:", count)
-print("histogram:", block)
+for i in range(len(block)):
+	print(i*arg.hist, block[i])
+#print("histogram:", block)
 		
 		
 
